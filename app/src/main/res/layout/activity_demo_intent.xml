@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.activitydemo.DemoIntentActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_intent_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Componnet Name" />
+
+    <Button
+        android:id="@+id/btn_call_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call phone" />
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send message" />
+
+    <Button
+        android:id="@+id/btn_back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back home"/>
+
+    <Button
+        android:id="@+id/btn_intent_filer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="intent filter"/>
+</LinearLayout>

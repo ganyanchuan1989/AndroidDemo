@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      button{
+        padding: 5px;
+        border-radius: 2px;
+        border: 0px;
+        background-color: #0170fe;
+        color: #fff;
+      }
+      button:hover{
+        background-color: #40a9ff;
+      }
+    </style>
+    <script src="./vconsole.min.js"></script>
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      var vConsole = new window.VConsole();
+    </script>
+</head>
+<body>
+<div>
+  Hello JsApi Demo
+</div>
+<button onclick="callJava()">js call java </button>
+<script type="text/javascript">
+    function javaCallMethod(name){
+      console.log("我被Java调用了,参数", name)
+      return "jsOK";
+    }
+
+    function callJava(){
+        console.log("callJava");
+        const ret = window.myJsApi.sayHello("gxz");
+        console.log("java返回值："+ret);
+    }
+</script>
+</body>
+</html>

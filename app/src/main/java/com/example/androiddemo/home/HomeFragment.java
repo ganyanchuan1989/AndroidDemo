@@ -14,7 +14,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.androiddemo.R;
+import com.example.androiddemo.home.activitydemo.DemoActionBarActivity;
+import com.example.androiddemo.home.activitydemo.DemoActionBarTabActivity;
+import com.example.androiddemo.home.activitydemo.DemoActionViewActivity;
 import com.example.androiddemo.home.activitydemo.DemoActivityActivity;
+import com.example.androiddemo.home.activitydemo.DemoIntentActivity;
+import com.example.androiddemo.home.activitydemo.DemoMenuActivity;
+import com.example.androiddemo.home.activitydemo.DemoTipActivity;
+import com.example.androiddemo.home.broadcastdemo.DemoBroadcastActivity;
 import com.example.androiddemo.home.uidemo.DemoChronometerActivity;
 import com.example.androiddemo.home.uidemo.DemoImageSwitcherActivity;
 import com.example.androiddemo.home.uidemo.DemoListViewActivity;
@@ -22,6 +29,7 @@ import com.example.androiddemo.home.uidemo.DemoProgressBarActivity;
 import com.example.androiddemo.home.uidemo.DemoSpinnerActivity;
 import com.example.androiddemo.home.uidemo.DemoTabsActivity;
 import com.example.androiddemo.home.uidemo.DemoTextViewActivity;
+import com.example.androiddemo.home.webviewdemo.DemoWebViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +53,14 @@ public class HomeFragment extends Fragment {
         lists.add(new GridChannel(6, R.drawable.app, "Chronometer", DemoChronometerActivity.class));
         lists.add(new GridChannel(7, R.drawable.app, "Tabs[D]", DemoTabsActivity.class));
         lists.add(new GridChannel(8, R.drawable.app, "Activity", DemoActivityActivity.class));
+        lists.add(new GridChannel(9, R.drawable.app, "Intent", DemoIntentActivity.class));
+        lists.add(new GridChannel(10, R.drawable.app, "Broadcast", DemoBroadcastActivity.class));
+        lists.add(new GridChannel(11, R.drawable.app, "Webview", DemoWebViewActivity.class));
+        lists.add(new GridChannel(12, R.drawable.app, "Menu", DemoMenuActivity.class));
+        lists.add(new GridChannel(13, R.drawable.app, "ActionBar", DemoActionBarActivity.class));
+        lists.add(new GridChannel(14, R.drawable.app, "ActionView", DemoActionViewActivity.class));
+        lists.add(new GridChannel(15, R.drawable.app, "ActionBarTab[D]", DemoActionBarTabActivity.class));
+        lists.add(new GridChannel(16, R.drawable.app, "Tip", DemoTipActivity.class));
     }
 
     @Nullable

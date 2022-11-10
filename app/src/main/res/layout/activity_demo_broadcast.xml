@@ -4,8 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".home.broadcastdemo.DemoBroadcastActivity">
 
+    <Button
+        android:id="@+id/btn_broadcast_net"
+        android:text="接收系统广播"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btn_broadcast_custom"
+        android:text="自定义发送广播1（静态注册）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_broadcast_custom2"
+        android:text="自定义发送广播2（静态注册）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_broadcast_custom_dynamic"
+        android:text="自定义发送广播（动态注册）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_broadcast_custom_dynamic2"
+        android:text="自定义发送广播（动态注册）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_broadcast_local"
+        android:text="自定义发送广播（本地消息）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_broadcast_order"
+        android:text="发送有序广播"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

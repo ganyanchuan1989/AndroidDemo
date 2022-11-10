@@ -54,13 +54,13 @@ public class DemoWebViewActivity extends AppCompatActivity implements View.OnCli
         webView.getSettings().setUseWideViewPort(true);
 
         webView.addJavascriptInterface(new MyJSApi(), "myJsApi");
-//        webView.loadUrl("file:///android_asset/test.html");
-//        editText.setText("file:///android_asset/test.html");
+        webView.loadUrl("file:///android_asset/test.html");
+        editText.setText("file:///android_asset/test.html");
 
 //      采用服务器加载，如果是http，需要设置
 //      android:usesCleartextTraffic="true"
-        webView.loadUrl("http://192.168.137.1:5500/test.html");
-        editText.setText("http://192.168.137.1:5500/test.html");
+//        webView.loadUrl("http://192.168.137.1:5500/test.html");
+//        editText.setText("http://192.168.137.1:5500/test.html");
 
         webView.setWebViewClient(new WebViewClient(){
             @Override

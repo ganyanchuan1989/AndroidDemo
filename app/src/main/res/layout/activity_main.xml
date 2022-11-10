@@ -25,23 +25,81 @@
     <LinearLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/btn_home"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/home_s"
-            android:layout_weight="1"/>
-        <ImageView
-            android:id="@+id/btn_my"
-            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/btn_home"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/home_s"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="主页" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/my_d"
-            android:layout_weight="1"/>
+            android:orientation="vertical"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/btn_media"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/media_d"/>
+            <TextView
+                android:text="多媒体"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/btn_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/storage_d"/>
+            <TextView
+                android:text="存储"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/btn_my"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/my_d"/>
+            <TextView
+                android:text="我的"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
     </LinearLayout>
 
 

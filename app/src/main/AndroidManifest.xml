@@ -3,13 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <!-- 网络权限 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 通知-->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 通知 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<!--    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>-->
+    <uses-permission android:name="android.permission.CAMERA" /><!-- 相机权限-->
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,6 +25,45 @@
         android:theme="@style/Theme.AndroidDemo"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".media.DemoVideoActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".media.DemoMediaPlayActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".media.DemoCameraActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <receiver
+            android:name=".home.broadcastdemo.MyStaticRegisterReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="action1" />
+                <action android:name="action2" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".home.broadcastdemo.DemoBroadcastSystemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".home.activitydemo.DemoTipActivity"
             android:exported="false">

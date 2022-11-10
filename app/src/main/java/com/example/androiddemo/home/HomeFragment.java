@@ -43,7 +43,6 @@ public class HomeFragment extends Fragment {
     }
 
     private void initListData() {
-
         lists.add(new GridChannel(99, R.drawable.app, "API", DemoAPIActivity.class));
         lists.add(new GridChannel(1, R.drawable.app, "TextView", DemoTextViewActivity.class));
         lists.add(new GridChannel(2, R.drawable.app, "ListView", DemoListViewActivity.class));
@@ -54,13 +53,13 @@ public class HomeFragment extends Fragment {
         lists.add(new GridChannel(7, R.drawable.app, "Tabs[D]", DemoTabsActivity.class));
         lists.add(new GridChannel(8, R.drawable.app, "Activity", DemoActivityActivity.class));
         lists.add(new GridChannel(9, R.drawable.app, "Intent", DemoIntentActivity.class));
-        lists.add(new GridChannel(10, R.drawable.app, "Broadcast", DemoBroadcastActivity.class));
         lists.add(new GridChannel(11, R.drawable.app, "Webview", DemoWebViewActivity.class));
         lists.add(new GridChannel(12, R.drawable.app, "Menu", DemoMenuActivity.class));
         lists.add(new GridChannel(13, R.drawable.app, "ActionBar", DemoActionBarActivity.class));
         lists.add(new GridChannel(14, R.drawable.app, "ActionView", DemoActionViewActivity.class));
         lists.add(new GridChannel(15, R.drawable.app, "ActionBarTab[D]", DemoActionBarTabActivity.class));
         lists.add(new GridChannel(16, R.drawable.app, "Tip", DemoTipActivity.class));
+        lists.add(new GridChannel(999, R.drawable.app, "Broadcast", DemoBroadcastActivity.class));
     }
 
     @Nullable
